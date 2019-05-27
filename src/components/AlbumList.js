@@ -22,7 +22,7 @@ state = { data:[], loading: true }; // Initializing state to store data
       }).catch(error=>console.log(error))
   }
 
-// renderAlbums method to render data into AlbumDetail component
+//Parsing data to component <AlbumDetail> using props
   renderAlbums(){
     var size = 15;
     var data = this.state.data.slice(0,size);
