@@ -3,14 +3,15 @@ import { Actions } from 'react-native-router-flux';
 import { View,ImageBackground,Image, Alert } from 'react-native';
 import { Input, Button } from '../common';
 import ComponentStyle from './ComponentStyle' 
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome'; 
 
 class Login extends Component {
       constructor(props){
         super(props)
-        this.state = { email:"", password :"" }
+        this.state = { email:"", password :"" } // Initializing user input state  
       }
     
+   // validation function to validate data 
       validInput = ( val ) => {
           if(!(/^\S+@\S+$/.test(val))){
             alert("Please enter valid email");
@@ -18,13 +19,15 @@ class Login extends Component {
           }else return (val);
       };
 
-      onButtonPress()  {
+// onSubmitData function to validate login and navigate to dash board screen
+      onSubmitData()  {
           if (this.state.email == '' || this.state.password == '')
              alert("Please fill out all fields!");
           else if(this.state.email != '' && this.state.password != '' && this.validInput(this.state.email))
-             Actions.dashboard();
+             Actions.reset('dashBoard');
       }
-    
+
+  // Render method
   render() {
     return (
       <ImageBackground style={ComponentStyle.imageStyle} source={require('./../../assets/bg1.jpg')}>
@@ -42,7 +45,7 @@ class Login extends Component {
                   onChangeText={(password) => this.setState({ password })}
                 />
             </View>
-            <Button  onPress={this.onButtonPress.bind(this)} > Submit </Button>
+            <Button  onPress={this.onSubmitData.bind(this)} > Submit </Button>
           </View>
     </ImageBackground>
     );
