@@ -16,7 +16,8 @@ import { Header, Button } from '../common';  // importing components from common
       { cancelable: false }
     )
   }
- 
+
+// Main boilerplate 
 const DashBoard = () => (
   <View style={{ flex:1}}>
   // Rendering header component
