@@ -3,7 +3,7 @@ import { ScrollView, ActivityIndicator, View} from 'react-native';
 import AlbumDetail from './AlbumDetail';
 import ComponentStyle from './ComponentStyle' // Importing common styling component
 
-// 
+// Created reusable AlbumList component
 class AlbumList extends Component{
 state = { data:[], loading: true }; // Initializing state to store data  
 
@@ -31,8 +31,7 @@ state = { data:[], loading: true }; // Initializing state to store data
 
 // Rendering the data                    
   render(){
-      
-   // Data fetched loading condition 
+    // Data fetched loading condition 
     if(this.state.loading){
       return( 
         <View style={ComponentStyle.loader}> 
