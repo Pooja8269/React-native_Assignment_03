@@ -24,7 +24,7 @@ class Login extends Component {
           if (this.state.email == '' || this.state.password == '')
              alert("Please fill out all fields!");
           else if(this.state.email != '' && this.state.password != '' && this.validInput(this.state.email))
-             Actions.reset('dashBoard');
+             Actions.reset('dashBoard'); // Navigate to dashBoard screen
       }
 
   // Render method
