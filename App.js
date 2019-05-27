@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import RouterFlux from './RouterFlux';
 
-// Application root component app
+// Root component 
 export default class App extends Component {
   render() {
     return (
