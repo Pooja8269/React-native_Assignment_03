@@ -1,3 +1,5 @@
+// Defined all common folder components styling in single js file 
+
 import {Dimensions, StyleSheet } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
@@ -91,4 +93,4 @@ const CommonStyle = StyleSheet.create({
   },
 });
 
-export default CommonStyle;
+export default CommonStyle; // Exported CommonStyle
