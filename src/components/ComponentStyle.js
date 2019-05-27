@@ -1,3 +1,5 @@
+// defined all Component folder components styling in single js file 
+
 import {Dimensions, StyleSheet } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
@@ -106,4 +108,4 @@ const ComponentStyle = StyleSheet.create({
   },
 });
 
-export default ComponentStyle;
+export default ComponentStyle; // Exporting ComponentStyle 
