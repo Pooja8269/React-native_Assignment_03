@@ -17,7 +17,7 @@ class RouterFlux extends Component  {
               // Route for dashboard component
               <Scene key="dashBoard" component={DashBoard} hideNavBar={true}  />
 
-              //Route for imageView component
+              //Route for full imageView detail component
               <Scene key="imageView" component={ImageView} hideNavBar={false} />
           </Scene>
        </Router>
