@@ -5,7 +5,7 @@ import DashBoard from './src/components/DashBoard';
 import ImageView from './src/components/ImageView'
 
 // Created reusable component router flux
-class RouterFlux extends Component  {
+class Routes extends Component  {
   render() {
     return (
         // Routing between screens using key
@@ -25,4 +25,4 @@ class RouterFlux extends Component  {
   }
 }    
 
-export default RouterFlux;
+export default Routes;
