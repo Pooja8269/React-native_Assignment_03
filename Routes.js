@@ -9,8 +9,11 @@ class Routes extends Component  {
     return (
         <Router>
           <Scene key="root" >
+          // Initial screen
               <Scene key="login" component={Login}  initial  hideNavBar={true} />
+          // Dash board screen 
               <Scene key="dashboard" component={DashBoard} hideNavBar={true}  />
+          // Full image view screen
               <Scene key="imageView" component={ImageView} hideNavBar={false} />
           </Scene>
        </Router>
