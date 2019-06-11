@@ -12,7 +12,7 @@ class Routes extends Component  {
           // Initial screen
               <Scene key="login" component={Login}  initial  hideNavBar={true} />
           // Dash board screen 
-              <Scene key="dashboard" component={DashBoard} hideNavBar={true}  />
+              <Scene key="dashBoard" component={DashBoard} hideNavBar={true}  />
           // Full image view screen
               <Scene key="imageView" component={ImageView} hideNavBar={false} />
           </Scene>
